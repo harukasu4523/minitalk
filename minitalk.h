@@ -1,16 +1,15 @@
 #ifndef MINITALK_H
 # define MINITALK_H
 
-#include <signal.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h>
-#include <sys/wait.h>
-#include <string.h>
+# include <signal.h>
+# include <stdlib.h>
+# include <unistd.h>
 
-typedef struct  s_msg
+typedef struct s_msg
 {
-	char	c;
+	unsigned char	c1;
+	unsigned char	c2;
+	// char	*s;
 	size_t	size;
 }				t_msg;
 
